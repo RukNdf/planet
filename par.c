@@ -121,6 +121,7 @@ int main(int argc, char **argv){
 				double dx = abs(planets[i].v.x - planets[j].v.x);
 				double dy = abs(planets[i].v.y - planets[j].v.y);				
 				double dist = sqrt((dx*dx)+(dy*dy));
+				if(dist == 0) continue;
 				//calculate attraction force
 				double f = gConst*planets[i].v.size*planets[j].v.size/dist;
 				//calculate resulting speed according to mass
