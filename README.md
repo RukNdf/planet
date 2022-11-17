@@ -19,7 +19,13 @@ ___
 t.py 
 
 le o output do programa e anima
+
+gen.py
+
+gera arquivos
 ___
 e.g.
 
-gcc seq.c -lm -o seq && seq in > b && t.py b
+ gcc seq.c -lm -o seq && seq in > b && t.py b
+
+ gen.py auto && seq auto > b && t.py b
